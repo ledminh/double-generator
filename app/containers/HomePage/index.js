@@ -16,7 +16,7 @@ import messages from './messages';
 import { createStructuredSelector } from 'reselect';
 import {makeSelectInput, makeSelectResult, makeSelectCurrentValue} from './selectors';
 
-export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div>
