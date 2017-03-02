@@ -61,6 +61,7 @@ export function* generate(){
         yield delay(800)
     }
 
+    //ENDING
     var result = yield select(makeSelectResult());
     result += "(The next result is greater than 100000)\n" 
             + "::: THE END :::"; 
