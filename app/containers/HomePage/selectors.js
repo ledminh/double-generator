@@ -21,9 +21,15 @@ const makeSelectCurrentValue = () => createSelector(
     (homeState) => homeState.get('current_value')
 );
 
+const makeSelectButtonText = () => createSelector(
+    selectHome,
+    (homeState) => homeState.get('button_text')
+);
+
 export {
     selectHome,
     makeSelectCurrentValue,
     makeSelectInput,
-    makeSelectResult
+    makeSelectResult,
+    makeSelectButtonText
 }
